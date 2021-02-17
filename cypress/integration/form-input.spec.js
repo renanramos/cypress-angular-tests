@@ -1,6 +1,6 @@
 describe("Form input", () => {
   beforeEach(() => {
-    cy.visit("/");
+    cy.seedAndVisit();
   });
 
   it("Focuses the input on load", () => {
@@ -8,6 +8,7 @@ describe("Form input", () => {
   });
   
   it.only("Accepts input", () => {
-    cy.get("#title").type("New todo").should("have.value", "New todo");
+    const value = "New todo";
+    cy.get("#title").type(value).should("have.value", value);
   });
 });
