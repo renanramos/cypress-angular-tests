@@ -19,6 +19,11 @@
       "id": 4,
       "title": "Okay",
       "completed": false
+    },
+    {
+      "id": 5,
+      "title": "New todo",
+      "completed": false
     }
   ]
 }
